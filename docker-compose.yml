@@ -1,0 +1,8 @@
+version: '3.4'
+
+services:
+  graphql.helloworld.singleservice:
+    image: ${DOCKER_REGISTRY}graphqlhelloworldsingleservice
+    build:
+      context: .
+      dockerfile: src/GraphQL.HelloWorld.SingleService/Dockerfile
